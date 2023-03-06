@@ -5,6 +5,7 @@ import com.example.data.remote.dtos.Info
 import com.example.data.remote.dtos.LocationDto
 import com.example.data.remote.dtos.ResultDto
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 
 interface ApiService {
@@ -31,8 +32,8 @@ interface ApiService {
     ): BaseMainResponse<Info>
 
 
-    @GET("characters/&key")
+    @GET("characters/{id}")
     suspend fun getCharacterDetails(
-        @Query("key") key: String
-    ): BaseMainResponse<ResultDto>
+        @Path("id") id: Int
+    ): ResultDto
 }
