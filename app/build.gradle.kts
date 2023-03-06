@@ -53,4 +53,5 @@ dependencies {
 
     implementation(project(":features:main"))
     implementation(project(":features:main:data"))
+    implementation(project(":core"))
 }
