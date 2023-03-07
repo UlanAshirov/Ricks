@@ -1,4 +1,8 @@
 package com.example.main.characters
 
-class CharacterViewModel {
+import com.example.core.base.BaseViewModel
+
+class CharacterViewModel : BaseViewModel(){
+
+
 }
