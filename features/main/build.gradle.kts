@@ -49,6 +49,11 @@ dependencies {
     //Koin
     implementation(Dependencies.Koin.koinAndroid)
 
+    //Navigation
+    implementation(Dependencies.Navigation.fragment)
+    implementation(Dependencies.Navigation.ui)
+
+
     //Paging
     implementation(Dependencies.Paging.paging_v3)
     implementation(Dependencies.Paging.pagingCommon)

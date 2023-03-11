@@ -13,6 +13,11 @@ object Dependencies {
         const val espresso = "androidx.test.espresso:espresso-core:3.5.1"
     }
 
+    object Navigation {
+        const val nav_version = "2.5.3"
+        const val fragment = "androidx.navigation:navigation-fragment:$nav_version"
+        const val ui = "androidx.navigation:navigation-ui:$nav_version"
+    }
     object Koin {
         const val koinAndroid = "io.insert-koin:koin-android:3.3.3"
         const val koinCore = "io.insert-koin:koin-core:3.3.3"

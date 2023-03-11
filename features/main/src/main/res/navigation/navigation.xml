@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/charactersFragment">
+
+    <fragment
+        android:id="@+id/charactersFragment"
+        android:name="com.example.main.characters.CharactersFragment"
+        android:label="CharactersFragment"
+        tools:layout="@layout/fragment_characters"/>
+    <fragment
+        android:id="@+id/episodesFragment"
+        android:name="com.example.main.episodes.EpisodesFragment"
+        android:label="EpisodesFragment"
+        tools:layout="@layout/fragment_episodes"/>
+    <dialog
+        android:id="@+id/filterFragment"
+        android:name="com.example.main.filter.FilterFragment"
+        android:label="FilterFragment"
+        tools:layout="@layout/filter"/>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.example.main.location.LocationFragment"
+        android:label="LocationFragment"
+        tools:layout="@layout/fragment_location"/>
+    <fragment
+        android:id="@+id/mainFlowFragment"
+        android:name="com.example.main.main_flow.MainFlowFragment"
+        android:label="MainFlowFragment"
+        tools:layout="@layout/fragment_main_flow"/>
+    <fragment
+        android:id="@+id/pagerFragment"
+        android:name="com.example.main.pager.PagerFragment"
+        android:label="PagerFragment"
+        tools:layout="@layout/fragment_pager"/>
+</navigation>
