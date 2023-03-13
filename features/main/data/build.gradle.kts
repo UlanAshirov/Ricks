@@ -11,6 +11,7 @@ android {
         minSdk = Config.minSdk
         targetSdk = Config.targetSdk
 
+        buildConfigField("String","BASE_URL", "\"https://rickandmortyapi.com/\"")
         testInstrumentationRunner = Config.testInstrumentationRunner
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -45,6 +46,8 @@ dependencies {
     //Retrofit
     implementation(Dependencies.Retrofit.retrofit)
     implementation(Dependencies.Retrofit.gsonAnnotation)
+    implementation(Dependencies.Retrofit.gsonConverter)
+
 
     //OkHttp
     implementation(Dependencies.OkHttp.okhttp)

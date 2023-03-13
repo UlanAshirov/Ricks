@@ -22,6 +22,7 @@ object Dependencies {
         private const val retrofit_version = "2.9.0"
         const val retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
         const val gsonAnnotation = "com.google.code.gson:gson:2.10.1"
+        const val gsonConverter = "com.squareup.retrofit2:converter-gson:2.9.0"
     }
 
     object OkHttp {
@@ -42,6 +43,21 @@ object Dependencies {
     object Lifecycle {
         private const val lifecycle_version = "2.5.1"
         const val lifecycleKtx = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
-        const val lifecycleViewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+        const val lifecycleViewModel =
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    }
+
+    object NavigationComponent {
+        private const val nav_version = "2.5.3"
+        const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:$nav_version"
+        const val navigationUI = "androidx.navigation:navigation-ui-ktx:$nav_version"
+    }
+
+    object Glide {
+        const val glide = "com.github.bumptech.glide:glide:4.15.0"
+    }
+
+    object ViewBinding {
+        const val viewBinding = "com.github.kirich1409:viewbindingpropertydelegate-full:1.5.8"
     }
 }

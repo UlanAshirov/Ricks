@@ -7,10 +7,10 @@ import com.example.domain.model.ResultModel
 
 class CharactersSource(
     private val apiService: ApiService,
-    private val name: String,
-    private val status: String,
-    private val gender: String,
-    private val species: String
+    private val name: String?,
+    private val status: String?,
+    private val gender: String?,
+    private val species: String?
 ) : BasePagingSource<ResultDto, ResultModel>({
     apiService.getCharacter(
         name = name,

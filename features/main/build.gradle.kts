@@ -53,12 +53,15 @@ dependencies {
     implementation(Dependencies.Paging.paging_v3)
     implementation(Dependencies.Paging.pagingCommon)
 
+    //NavComponent
+    implementation(Dependencies.NavigationComponent.navigationFragment)
+    implementation(Dependencies.NavigationComponent.navigationUI)
+
+    //ViewBinding Delegate
+    implementation(Dependencies.ViewBinding.viewBinding)
+
     implementation(project(":features:main:data"))
     implementation(project(":core"))
 
-    //ViewBinding Delegate
-    // reflection-based flavor
-    implementation("com.github.kirich1409:viewbindingpropertydelegate-full:1.5.8")
-    // reflection-free flavor
-    implementation("com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.8")
+
 }

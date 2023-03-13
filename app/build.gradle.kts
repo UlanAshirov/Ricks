@@ -51,6 +51,9 @@ dependencies {
     //Koin
     implementation(Dependencies.Koin.koinAndroid)
 
+    //NavComponent
+    implementation(Dependencies.NavigationComponent.navigationUI)
+    implementation(Dependencies.NavigationComponent.navigationFragment)
     implementation(project(":features:main"))
     implementation(project(":features:main:data"))
     implementation(project(":core"))

@@ -1,7 +1,7 @@
 package com.example.data.remote.apiservice
 
 import com.example.data.base.BaseMainResponse
-import com.example.data.remote.dtos.Info
+import com.example.data.remote.dtos.EpisodeDto
 import com.example.data.remote.dtos.LocationDto
 import com.example.data.remote.dtos.ResultDto
 import retrofit2.http.GET
@@ -10,7 +10,7 @@ import retrofit2.http.Query
 
 interface ApiService {
 
-    @GET("character")
+    @GET("api/character")
     suspend fun getCharacter(
         @Query("name") name: String? = "",
         @Query("status") status: String? = "",
@@ -19,20 +19,20 @@ interface ApiService {
         @Query("page") page: Int
     ): BaseMainResponse<ResultDto>
 
-    @GET("location")
+    @GET("api/location")
     suspend fun getLocation(
         @Query("name") name: String? = "",
         @Query("page") page: Int,
     ): BaseMainResponse<LocationDto>
 
-    @GET("episodes")
+    @GET("api/episodes")
     suspend fun getEpisodes(
         @Query("name") name: String? = "",
-        @Query("page") pager: Int
-    ): BaseMainResponse<Info>
+        @Query("page") page: Int
+    ): BaseMainResponse<EpisodeDto>
 
 
-    @GET("characters/{id}")
+    @GET("api/characters/{id}")
     suspend fun getCharacterDetails(
         @Path("id") id: Int
     ): ResultDto

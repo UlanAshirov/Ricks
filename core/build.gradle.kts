@@ -54,5 +54,10 @@ dependencies {
     implementation(Dependencies.Lifecycle.lifecycleViewModel)
     implementation(Dependencies.Lifecycle.lifecycleKtx)
 
+    //Glide
+    implementation(Dependencies.Glide.glide)
+
+    //NavComponent
+    implementation(Dependencies.NavigationComponent.navigationFragment)
     implementation(project(":common"))
 }

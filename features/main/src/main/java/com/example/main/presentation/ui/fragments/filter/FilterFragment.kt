@@ -1,4 +1,4 @@
-package com.example.main.filter
+package com.example.main.presentation.ui.fragments.filter
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import com.example.main.R
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 
-class FilterFragment: BottomSheetDialogFragment() {
+class FilterFragment : BottomSheetDialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,

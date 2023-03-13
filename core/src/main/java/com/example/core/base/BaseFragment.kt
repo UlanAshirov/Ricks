@@ -68,7 +68,7 @@ abstract class BaseFragment<Binding : ViewBinding, ViewModel : BaseViewModel>(
     ) {
         safeFlowGather {
             collect {
-                when(it) {
+                when (it) {
                     is Either.Right -> actionIfEitherIsRight(it.value)
                     is Either.Left -> actionIfEitherIsLeft(it.value)
                 }

@@ -1,4 +1,4 @@
-package com.example.main.location
+package com.example.main.presentation.ui.fragments.location
 
 import androidx.fragment.app.viewModels
 import by.kirich1409.viewbindingdelegate.viewBinding
